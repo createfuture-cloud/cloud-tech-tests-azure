@@ -98,10 +98,10 @@ resource "azurerm_key_vault_certificate" "azure_xdesign" {
       ]
 
       subject_alternative_names {
-        dns_names = ["azure.xdtechtest.cloud"]
+        dns_names = ["azure.createfuture.cloud"]
       }
 
-      subject            = "CN=azure-xdtechtest-cloud"
+      subject            = "CN=azure-createfuture-cloud"
       validity_in_months = 12
     }
   }
@@ -249,9 +249,4 @@ resource "azurerm_virtual_machine_extension" "apache" {
   "commandToExecute": "sudo apt-get -y install apache2"
  }
 SETTINGS
-
-
-  tags = {
-    environment = "Production"
-  }
 }
