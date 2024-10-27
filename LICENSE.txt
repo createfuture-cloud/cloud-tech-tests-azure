@@ -1,0 +1,11 @@
+COPYRIGHT 2024 CreateFuture
+
+This code, documentation, any portions thereof, and any derivative works ("the Software") must not be
+redistributed by anybody who is not an employee of CreateFuture.
+
+The Software may only be redistributed to or modified or used by:
+a) employees of CreateFuture
+b) candidates for employment with CreateFuture
+
+Candidates for employment with CreateFuture are requested to delete any copies of the Software once they
+have completed their Pair Programming assessment, or once they have withdrawn from the recruitment process.
