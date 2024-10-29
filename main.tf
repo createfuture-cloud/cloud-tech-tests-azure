@@ -14,6 +14,10 @@ resource "random_password" "vm_admin" {
 resource "azurerm_resource_group" "rg" {
   location = "uksouth"
   name     = "interview-${random_pet.rg_name.id}"
+  # Please don't remove this tag!
+  tags = {
+    environment = "interview"
+  }
 }
 
 resource "azurerm_key_vault" "certificates" {
