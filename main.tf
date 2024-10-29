@@ -1,5 +1,5 @@
 resource "random_pet" "rg_name" {
-  prefix = "rg"
+  prefix = "rg-interview"
 }
 
 resource "random_id" "kv_name" {
@@ -13,7 +13,7 @@ resource "random_password" "vm_admin" {
 
 resource "azurerm_resource_group" "rg" {
   location = "uksouth"
-  name     = "interview-${random_pet.rg_name.id}"
+  name     = random_pet.rg_name.id
   # Please don't remove this tag!
   tags = {
     environment = "interview"
