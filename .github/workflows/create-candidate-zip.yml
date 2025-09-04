@@ -1,0 +1,23 @@
+name: Create candiate zip
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Create archive
+        run: |
+          mv CANDIDATE_README.md README.md
+          zip -r paired_programming_exercise.zip * -x ".*"
+          
+      - name: Upload archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: paired_programming_exercise.zip
+          path: paired_programming_exercise.zip

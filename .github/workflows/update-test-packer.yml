@@ -1,0 +1,21 @@
+name: Packer Build
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger packer-build workflow in cloud-tech-tests-environments repo
+        run: |
+          curl -L \
+            -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${{ secrets.TECH_TEST_TRIGGER_PACKER_WORKFLOW_PAT }}" \
+            -H "X-GitHub-Api-Version: ${{ vars.API_VERSION }}" \
+            https://api.github.com/repos/createfuture-cloud/cloud-tech-tests/actions/workflows/124816474/dispatches \
+            -d '{"ref":"main"}'

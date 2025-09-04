@@ -1,15 +1,10 @@
-# Azure Pair Programming
+# AWS tech test
+This repository contains the code shared with candidates for the AWS pair programming exercise
 
-## Introduction
-The code in this directory will form the base of a Pair Programming exercise.  The code is HCL terraform, and is deliberately not well written or structured, and may contain flaws - however it will deploy a "working" infrastructure.
+## Mandatory tasks
+Once a pull request is merged into main, the workflows will kick off ensuring that the packer image used for the pairing exercise
+is updated in the [cloud-tech-tests](https://github.com/createfuture-cloud/cloud-tech-tests) repository, it will also create a zip of the code, this should be uploaded to the [paired programming exercise page](https://xsolutions.atlassian.net/wiki/spaces/TA/pages/3130621954/Paired+Programming+Interview+Template+Cloud+Engineer+-+Azure+Mid+Senior) on confluence
 
-## Requirements
-All you will need for the Pair Programming exercise is a browser - a Linux environment will be provided where both you and your assessor can control the system and see what each other are doing.
-
-## Preparation
-You are not expected to do anything with this code before the exercise, but if you do have the time to familiarise yourself with it, it might give you more time to demonstrate your skills.  If do you have time to review, you could also consider ways you might refactor or improve the code and/or infrastructure.
-
-## Evaluation
-During the Pair Programming exercise, the assessor will be working with you to add functionality and/or refactor the code.  You will have access to a web browser, an IDE (Visual Studio Code), and a terminal preloaded with the tools, credentials and the code.
-
-The exercise is open book. You will be able to browse the internet for guidance within in the remote session.  The interviewer is there to guide and help you, and will answer questions, offer suggestions, and will adjust the complexity of the tasks based on how well you're progressing.
+### Steps
+- Get the zip from the latest run of the [Create candidate zip workflow](https://github.com/createfuture-cloud/cloud-tech-tests-azure/actions/workflows/create-candidate-zip.yml)
+- Replace the file on the [paired programming exercise page](https://xsolutions.atlassian.net/wiki/spaces/TA/pages/3130621954/Paired+Programming+Interview+Template+Cloud+Engineer+-+Azure+Mid+Senior) on confluence
