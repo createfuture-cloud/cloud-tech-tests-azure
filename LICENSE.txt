@@ -1,11 +1,11 @@
-COPYRIGHT 2024 CreateFuture
+COPYRIGHT 2025 XSolutions365 Ltd
 
 This code, documentation, any portions thereof, and any derivative works ("the Software") must not be
-redistributed by anybody who is not an employee of CreateFuture.
+redistributed by anybody who is not an employee of XSolutions365 Ltd.
 
 The Software may only be redistributed to or modified or used by:
-a) employees of CreateFuture
-b) candidates for employment with CreateFuture
+a) employees of XSolutions365 Ltd
+b) candidates for employment with XSolutions365 Ltd
 
-Candidates for employment with CreateFuture are requested to delete any copies of the Software once they
+Candidates for employment with XSolutions365 Ltd are requested to delete any copies of the Software once they
 have completed their Pair Programming assessment, or once they have withdrawn from the recruitment process.
