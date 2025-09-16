@@ -7,17 +7,17 @@ on:
   workflow_dispatch:
 
 jobs:
-  trigger:
+  create_artifact:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
       - name: Create archive
         run: |
           mv CANDIDATE_README.md README.md
-          zip -r paired_programming_exercise.zip * -x ".*"
+          rm -rf .*
           
       - name: Upload archive
         uses: actions/upload-artifact@v4
         with:
-          name: paired_programming_exercise.zip
-          path: paired_programming_exercise.zip
+          name: paired_programming_exercise
+          path: ./
